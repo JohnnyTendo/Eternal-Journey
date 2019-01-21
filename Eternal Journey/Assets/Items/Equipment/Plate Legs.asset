@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 843a4f73fc2eb324b901f054879c45a1, type: 3}
+  m_Name: Plate Legs
+  m_EditorClassIdentifier: 
+  name: Plate Legs
+  icon: {fileID: 21300000, guid: ba35568314d73c240a443c9899d4763b, type: 3}
+  isDefaultItem: 0
+  equipSlot: 2
+  mesh: {fileID: 7512753310267762755, guid: 8a101f9a8503a65428d9ce07ba190b45, type: 3}
+  coveredMeshRegions: 00000000
+  armorModifier: 0
+  damageModifier: 0
