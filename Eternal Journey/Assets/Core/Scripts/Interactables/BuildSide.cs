@@ -8,15 +8,16 @@ public class BuildSide : Interactable
     public GameObject[] states;
     public Vector3 offset;
     public bool requirements = false;
-    public int stateIndex = 0;
+    public int stateIndex;
 
 //Testing Vars
     public bool upgrade = true;
 //Testing Vars end
 
-    void Start()
+    void Awake()
     {
-        currentState = states[0];
+        currentState = (GameObject)Instantiate(states[0], transform.position + offset, Quaternion.identity);
+        currentState.transform.parent = transform;
     }
 
     public override void Interact()
@@ -24,44 +25,34 @@ public class BuildSide : Interactable
         base.Interact();
         if (upgrade == true)
         {
-          Upgrade();
+            if (requirements == true)
+            {
+                if (stateIndex < states.Length)
+                {
+                    Destroy(currentState);
+                    stateIndex++;
+                    currentState = (GameObject)Instantiate(states[stateIndex], transform.position + offset, Quaternion.identity);
+                    currentState.transform.parent = transform;
+                }
+                else
+                {
+                    Debug.Log("Already upgraded to max!");
+                }
+            }
+            else
+            {
+                Debug.Log("You are missing the requirements!");
+            }
         }
         else
         {
-          Downgrade();
+            if (stateIndex > 0)
+            {
+                Destroy(currentState);
+                stateIndex--;
+                currentState = (GameObject)Instantiate(states[stateIndex], transform.position + offset, Quaternion.identity);
+                currentState.transform.parent = transform;
+            }
         }
-    }
-
-    public void Upgrade()
-    {
-      if (requirements == true)
-      {
-          if (i < states.length)
-          {
-            Destroy(currentState);
-            i++;
-            currentState = (GameObject)Instantiate(states[i], transform.position + offset, Quaternion.identity);
-            currentState.transform.parent = transform;
-          }
-          else
-          {
-            Debug.Log("Already upgraded to max!");
-          }
-      }
-      else
-      {
-        Debug.Log("You are missing the requirements!");
-      }
-    }
-
-    public void Downgrade()
-    {
-      if (i > 0)
-      {
-        Destroy(currentState);
-        i--;
-        currentState = (GameObject)Instantiate(states[i], transform.position + offset, Quaternion.identity);
-        currentState.transform.parent = transform;
-      }
     }
 }

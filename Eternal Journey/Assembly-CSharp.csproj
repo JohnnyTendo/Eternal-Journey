@@ -53,6 +53,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Core\Scripts\Interactables\BuildSide.cs" />
      <Compile Include="Assets\Core\Scripts\Interactables\ConvertToRegularMesh.cs" />
      <Compile Include="Assets\Core\Scripts\Interactables\Interactable.cs" />
      <Compile Include="Assets\Core\Scripts\Interactables\MakeLight.cs" />
@@ -63,6 +64,7 @@
      <Compile Include="Assets\Core\Scripts\Inventory2\EquipmentManager2.cs" />
      <Compile Include="Assets\Core\Scripts\Inventory2\Inventory2.cs" />
      <Compile Include="Assets\Core\Scripts\Inventory2\InventoryUI2.cs" />
+     <Compile Include="Assets\Core\Scripts\Item\Consumable.cs" />
      <Compile Include="Assets\Core\Scripts\Item\Equipment.cs" />
      <Compile Include="Assets\Core\Scripts\Item\Item.cs" />
      <Compile Include="Assets\Core\Scripts\Item\ItemPickup.cs" />
