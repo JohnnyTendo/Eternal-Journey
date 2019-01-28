@@ -44,6 +44,10 @@ ModelImporter:
     100076: PlateLegs
     100078: Shirt_001
     100080: Shoe
+    100082: Emblem
+    100084: Plane
+    100086: Shield
+    100088: Shirt_000
     400000: Armature
     400002: Chest
     400004: Cube
@@ -85,8 +89,18 @@ ModelImporter:
     400076: PlateLegs
     400078: Shirt_001
     400080: Shoe
+    400082: Emblem
+    400084: Plane
+    400086: Shield
+    400088: Shirt_000
     2300000: Body_001
+    2300002: Emblem
+    2300004: Plane
+    2300006: Shield
     3300000: Body_001
+    3300002: Emblem
+    3300004: Plane
+    3300006: Shield
     4300000: Cube
     4300002: Helmet
     4300004: Body_001
@@ -97,6 +111,10 @@ ModelImporter:
     4300014: Shoe
     4300016: Pants
     4300018: Body
+    4300020: Shield
+    4300022: Emblem
+    4300024: Plane
+    4300026: Shirt_000
     7400000: Default Take
     7400002: Idle
     7400004: Run
@@ -111,6 +129,7 @@ ModelImporter:
     13700012: PlateLegs
     13700014: Shirt_001
     13700016: Shoe
+    13700018: Shirt_000
     2186277476908879412: ImportLogs
   externalObjects:
   - first:
@@ -118,6 +137,21 @@ ModelImporter:
       assembly: UnityEngine.CoreModule
       name: Black
     second: {fileID: 2100000, guid: 56b92e753ae922948b24fa34a59ffa9a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Blade
+    second: {fileID: 2100000, guid: e8bdff04900f2eb47bed8d78ce5a2fae, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Blade_highlight
+    second: {fileID: 2100000, guid: 018feda7d3fde7147a3633b590b2e27a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Emblem
+    second: {fileID: 2100000, guid: a793114013ef663418eccced3def1c49, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
@@ -136,8 +170,18 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: Metal_001
+    second: {fileID: 2100000, guid: e92098d651bfe6a4f92a2700602130e1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: Metal_dark
     second: {fileID: 2100000, guid: f5440ef824b88fa499f78e95dd94b307, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Metal_grey
+    second: {fileID: 2100000, guid: 5acb2f51124acd14d8e3588c3ba32409, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
@@ -163,6 +207,11 @@ ModelImporter:
       assembly: UnityEngine.CoreModule
       name: UnderClothes
     second: {fileID: 2100000, guid: ac55679a4f63b594b9a61b86864d36ce, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wood
+    second: {fileID: 2100000, guid: ae0ebde7adb830740b130a7d89895005, type: 2}
   materials:
     importMaterials: 1
     materialName: 0

@@ -53,6 +53,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Core\Scripts\Controller\EnemyController.cs" />
+     <Compile Include="Assets\Core\Scripts\Enemy.cs" />
      <Compile Include="Assets\Core\Scripts\Interactables\BuildSide.cs" />
      <Compile Include="Assets\Core\Scripts\Interactables\ConvertToRegularMesh.cs" />
      <Compile Include="Assets\Core\Scripts\Interactables\Interactable.cs" />
@@ -79,6 +81,12 @@
      <Compile Include="Assets\Core\Scripts\Player2\CharacterAnimator2.cs" />
      <Compile Include="Assets\Core\Scripts\Player2\PlayerController2.cs" />
      <Compile Include="Assets\Core\Scripts\Player2\PlayerMotor2.cs" />
+     <Compile Include="Assets\Core\Scripts\PlayerManager.cs" />
+     <Compile Include="Assets\Core\Scripts\SnapToGrid.cs" />
+     <Compile Include="Assets\Core\Scripts\Stats\CharacterStats.cs" />
+     <Compile Include="Assets\Core\Scripts\Stats\EnemyStats.cs" />
+     <Compile Include="Assets\Core\Scripts\Stats\PlayerStats.cs" />
+     <Compile Include="Assets\Core\Scripts\Stats\Stat.cs" />
  <Reference Include="Unity.RenderPipelines.Core.Editor">
  <HintPath>E:/Eternal Journey/Eternal Journey/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Editor.dll</HintPath>
  </Reference>

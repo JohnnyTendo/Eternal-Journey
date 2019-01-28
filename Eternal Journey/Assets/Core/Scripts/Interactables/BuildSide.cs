@@ -8,7 +8,7 @@ public class BuildSide : Interactable
     public GameObject[] states;
     public Vector3 offset;
     public bool requirements = false;
-    public int stateIndex;
+    public int stateIndex = 0;
 
 //Testing Vars
     public bool upgrade = true;
@@ -27,7 +27,7 @@ public class BuildSide : Interactable
         {
             if (requirements == true)
             {
-                if (stateIndex < states.Length)
+                if (stateIndex < states.Length -1)
                 {
                     Destroy(currentState);
                     stateIndex++;
@@ -52,6 +52,10 @@ public class BuildSide : Interactable
                 stateIndex--;
                 currentState = (GameObject)Instantiate(states[stateIndex], transform.position + offset, Quaternion.identity);
                 currentState.transform.parent = transform;
+            }
+            else
+            {
+                Debug.Log("Already downgraded to min!");
             }
         }
     }
