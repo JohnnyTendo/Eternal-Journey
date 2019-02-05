@@ -18,4 +18,9 @@ public class Item : ScriptableObject
     {
         Inventory.instance.Remove(this);
     }
+    
+    public void SwapStorage()
+    {
+        //Storage.instance.Remove(this);
+    }
 }
