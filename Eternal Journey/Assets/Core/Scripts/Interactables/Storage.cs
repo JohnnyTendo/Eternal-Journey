@@ -22,21 +22,7 @@ public class Storage : Interactable
     public override void Interact()
     {
         base.Interact();
-        isOpen = (isOpen) ? CloseStorage() : OpenStorage();
-    }
-
-    public bool OpenStorage()
-    {
-        //Some sort of inventory opens
         inventoryUI2.SetActive(!inventoryUI2.activeSelf);
-        //items should be moveable between inventories
-        return true;
-    }
-
-    public bool CloseStorage()
-    {
-        //close the inventory
-        return false;
     }
     
     void UpdateUI()
