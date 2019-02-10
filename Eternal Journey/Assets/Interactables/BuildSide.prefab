@@ -50,11 +50,12 @@ MonoBehaviour:
   interactionTransform: {fileID: 6387505109327983256}
   currentState: {fileID: 0}
   states:
-  - {fileID: 0}
-  - {fileID: 2624132519023319151, guid: e099cc6bf06d4f64ba3661020fe28ee5, type: 3}
+  - {fileID: 3653303422359261429, guid: 8faae3f16fb61114582f9fcad7ab1d27, type: 3}
+  - {fileID: 1047702996, guid: 033d611b89a1e3f4293366d80e46fb52, type: 3}
   offset: {x: 0, y: 0, z: 0}
-  requirements: 0
+  requirements: 1
   stateIndex: 0
+  rotation: {x: 0, y: 0, z: 0, w: 0}
   upgrade: 1
 --- !u!33 &6387505109327983254
 MeshFilter:

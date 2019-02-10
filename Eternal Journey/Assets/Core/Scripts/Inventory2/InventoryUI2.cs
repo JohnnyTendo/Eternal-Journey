@@ -21,7 +21,7 @@ public class InventoryUI2 : MonoBehaviour
     {
         if (Input.GetButtonDown("Inventory2"))
         {
-            inventoryUI2.SetActive(!inventoryUI2.activeSelf);
+            //inventoryUI2.SetActive(!inventoryUI2.activeSelf);
         }
     }
 

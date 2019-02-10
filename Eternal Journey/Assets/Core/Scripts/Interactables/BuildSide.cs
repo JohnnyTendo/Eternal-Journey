@@ -9,6 +9,7 @@ public class BuildSide : Interactable
     public Vector3 offset;
     public bool requirements = false;
     public int stateIndex = 0;
+    public float Yrotation;
 
 //Testing Vars
     public bool upgrade = true;
@@ -17,6 +18,7 @@ public class BuildSide : Interactable
     void Awake()
     {
         currentState = (GameObject)Instantiate(states[0], transform.position + offset, Quaternion.identity);
+        currentState.transform.rotation *= Quaternion.Euler(0, Yrotation, 0);
         currentState.transform.parent = transform;
     }
 
@@ -32,6 +34,7 @@ public class BuildSide : Interactable
                     Destroy(currentState);
                     stateIndex++;
                     currentState = (GameObject)Instantiate(states[stateIndex], transform.position + offset, Quaternion.identity);
+                    currentState.transform.rotation *= Quaternion.Euler(0, Yrotation, 0);
                     currentState.transform.parent = transform;
                 }
                 else
@@ -51,6 +54,7 @@ public class BuildSide : Interactable
                 Destroy(currentState);
                 stateIndex--;
                 currentState = (GameObject)Instantiate(states[stateIndex], transform.position + offset, Quaternion.identity);
+                currentState.transform.rotation *= Quaternion.Euler(0, Yrotation, 0);
                 currentState.transform.parent = transform;
             }
             else

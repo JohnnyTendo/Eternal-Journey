@@ -6,12 +6,23 @@ using UnityEngine;
 public class Consumable : Item
 {
 
-  public float modifier = 0;
+    public float modifier = 0;
 
-  public override void Use()
-  {
-    base.Use();
-    RemoveFromInventory();
-    Debug.Log("You have consumed " + name);
-  }
+    public override void Use()
+    {
+        base.Use();
+        Debug.Log("You have consumed " + name);
+        RemoveFromInventory();
+        /* Add here the poissibillity to switch the item between storage and inventory
+        if (Inventory and Storage are active)
+        {
+            AddToStorage();
+            RemoveFromInventory();
+        }
+        else
+        {
+            
+        }
+        */
+    }
 }
