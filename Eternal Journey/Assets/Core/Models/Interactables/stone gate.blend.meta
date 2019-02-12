@@ -26,7 +26,17 @@ ModelImporter:
     4300004: gateL
     7400000: Default Take
     9500000: //RootNode
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: stone_light
+    second: {fileID: 2100000, guid: 473438eae2d8e4e449462decb52d2790, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: stone_light_001
+    second: {fileID: 2100000, guid: 473438eae2d8e4e449462decb52d2790, type: 2}
   materials:
     importMaterials: 1
     materialName: 0

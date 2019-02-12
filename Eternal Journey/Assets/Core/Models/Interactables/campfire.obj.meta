@@ -19,17 +19,17 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Ground
-    second: {instanceID: 0}
+    second: {fileID: 2100000, guid: b64edccdf8034064bba9d4fbf4e98fc3, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Stone
-    second: {instanceID: 0}
+    second: {fileID: 2100000, guid: 473438eae2d8e4e449462decb52d2790, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Wood
-    second: {instanceID: 0}
+    second: {fileID: 2100000, guid: ae0ebde7adb830740b130a7d89895005, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
