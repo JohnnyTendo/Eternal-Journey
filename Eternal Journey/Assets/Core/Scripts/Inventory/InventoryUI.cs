@@ -1,10 +1,12 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 
 public class InventoryUI : MonoBehaviour
 {
 
     public Transform itemsParent;
     public GameObject inventoryUI;
+    public Text goldCounter;
     Inventory inventory;
     InventorySlot[] slots;
 
@@ -23,6 +25,7 @@ public class InventoryUI : MonoBehaviour
         {
             inventoryUI.SetActive(!inventoryUI.activeSelf);
         }
+        goldCounter.text = inventory.gold.ToString();
     }
 
     void UpdateUI()

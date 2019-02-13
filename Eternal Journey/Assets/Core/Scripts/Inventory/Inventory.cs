@@ -5,6 +5,7 @@ using UnityEngine;
 public class Inventory : MonoBehaviour {
 
     public List<Item> items = new List<Item>();
+    public int gold = new int();
 
     public static Inventory instance;
     #region singleton
@@ -40,5 +41,16 @@ public class Inventory : MonoBehaviour {
         items.Remove(item);
         if (onItemChangedCallback != null)
             onItemChangedCallback.Invoke();
+    }
+
+    public bool AddGold(int money)
+    {
+        gold += money;
+        return true;
+    }
+
+    public void RemoveGold(int money)
+    {
+        gold -= money;
     }
 }
