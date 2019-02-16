@@ -61,6 +61,9 @@ MonoBehaviour:
   radius: 1
   interactionTransform: {fileID: 3863776599078676951}
   item: {fileID: 11400000, guid: c1c048a15ca3d8443aa7cf213d98151b, type: 2}
+  isGold: 0
+  value: 0
+  currentType: 1
 --- !u!1001 &760126441588770441
 PrefabInstance:
   m_ObjectHideFlags: 0

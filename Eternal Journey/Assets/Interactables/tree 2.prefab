@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 6316931764732433497}
   - component: {fileID: 6971547831029432213}
   - component: {fileID: 5040880343250893261}
+  - component: {fileID: 5069912352261827617}
   m_Layer: 0
   m_Name: tree 2
   m_TagString: Untagged
@@ -113,3 +114,22 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 14
   m_Mesh: {fileID: 4300000, guid: 4a4b6d18b60f1de4cb1c5dfdb5679c5b, type: 3}
+--- !u!114 &5069912352261827617
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2500100485126128651}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ce6eafd9e3f9ab478bbf60d231a336f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  radius: 3
+  interactionTransform: {fileID: 8520931340250772969}
+  lootDrop: {fileID: 7189742840024423024, guid: e50630cb382b1794c83abd69c7f8e1eb,
+    type: 3}
+  spawnPoint: {fileID: 8520931340250772969}
+  offset: {x: 0, y: 0, z: 0}
+  delay: 10

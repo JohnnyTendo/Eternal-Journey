@@ -60,3 +60,6 @@ MonoBehaviour:
   radius: 3
   interactionTransform: {fileID: 1936428863481787589}
   item: {fileID: 11400000, guid: 1fbc594f6704d924c8bc08fa8af6c3a5, type: 2}
+  isGold: 0
+  value: 0
+  currentType: 1

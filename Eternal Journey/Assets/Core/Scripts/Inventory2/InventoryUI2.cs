@@ -21,6 +21,7 @@ public class InventoryUI2 : MonoBehaviour
     {
         if (Input.GetButtonDown("Inventory2"))
         {
+            //Removed for testing purpose while turning Inventory2 into a storage-system
             //inventoryUI2.SetActive(!inventoryUI2.activeSelf);
         }
     }
