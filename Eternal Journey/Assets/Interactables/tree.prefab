@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 3568987879503639829}
   - component: {fileID: 4075008520448161504}
   - component: {fileID: 5520695117128414862}
+  - component: {fileID: 6252887675605640084}
   m_Layer: 0
   m_Name: tree
   m_TagString: Untagged
@@ -129,8 +130,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radius: 3
   interactionTransform: {fileID: 3262978139864528955}
-  lootDrop: {fileID: 7189742840024423024, guid: e50630cb382b1794c83abd69c7f8e1eb,
+  lootDrop: {fileID: 7576554603324079288, guid: 8e01a7f7646f0d340b9ff414ea70f5ac,
     type: 3}
   spawnPoint: {fileID: 3262978139864528955}
   offset: {x: 0, y: -2.25, z: 0}
+  Xrotation: -90
   delay: 10
+--- !u!114 &6252887675605640084
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8184369824650521344}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77819ae540b5315488735a13427ef994, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  xyzRandom: 000001
