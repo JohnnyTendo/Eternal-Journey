@@ -63,6 +63,7 @@
   <ItemGroup>
     <Compile Include="Assets\Core\Scripts\Controller\EnemyController.cs" />
     <Compile Include="Assets\Core\Scripts\Enemy.cs" />
+    <Compile Include="Assets\Core\Scripts\hudUI.cs" />
     <Compile Include="Assets\Core\Scripts\Interactables\BuildSide.cs" />
     <Compile Include="Assets\Core\Scripts\Interactables\ConvertToRegularMesh.cs" />
     <Compile Include="Assets\Core\Scripts\Interactables\HarvestResources.cs" />
@@ -94,6 +95,7 @@
     <Compile Include="Assets\Core\Scripts\Player2\PlayerMotor2.cs" />
     <Compile Include="Assets\Core\Scripts\PlayerManager.cs" />
     <Compile Include="Assets\Core\Scripts\RandomRotation.cs" />
+    <Compile Include="Assets\Core\Scripts\RequirementsScript.cs" />
     <Compile Include="Assets\Core\Scripts\SnapToGrid.cs" />
     <Compile Include="Assets\Core\Scripts\Stats\CharacterStats.cs" />
     <Compile Include="Assets\Core\Scripts\Stats\EnemyStats.cs" />

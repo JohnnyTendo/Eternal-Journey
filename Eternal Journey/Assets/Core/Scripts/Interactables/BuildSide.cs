@@ -1,19 +1,17 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class BuildSide : Interactable
 {
     public GameObject currentState;
     public GameObject[] states;
     public Vector3 offset;
-    public bool requirements = false;
     public int stateIndex = 0;
     public float Yrotation;
 
 //Testing Vars
+    public bool requirements = false;
     public bool upgrade = true;
-//Testing Vars end
+    //Testing Vars end
 
     void Awake()
     {
@@ -25,6 +23,7 @@ public class BuildSide : Interactable
     public override void Interact()
     {
         base.Interact();
+        requirements = CheckRequirements();
         if (upgrade == true)
         {
             if (requirements == true)
@@ -39,12 +38,12 @@ public class BuildSide : Interactable
                 }
                 else
                 {
-                    Debug.Log("Already upgraded to max!");
+                    hudUI.instance.PostMessage("Already upgraded to max!");
                 }
             }
             else
             {
-                Debug.Log("You are missing the requirements!");
+                hudUI.instance.PostMessage("You are missing the requirements!");
             }
         }
         else
@@ -59,8 +58,28 @@ public class BuildSide : Interactable
             }
             else
             {
-                Debug.Log("Already downgraded to min!");
+                hudUI.instance.PostMessage("Already downgraded to min!");
             }
         }
+    }
+
+    public bool CheckRequirements()
+    {
+        int wood = Inventory.instance.resources[0];
+        int stone = Inventory.instance.resources[1];
+        int iron = Inventory.instance.resources[2];
+        int woodRequired = states[stateIndex+1].GetComponent<RequirementsScript>().woodRequired;
+        int stoneRequired = states[stateIndex+1].GetComponent<RequirementsScript>().stoneRequired;
+        int ironRequired = states[stateIndex+1].GetComponent<RequirementsScript>().ironRequired;
+        hudUI.instance.PostMessage("W:" + wood + "|" + woodRequired + " S:" + stone + "|" + stoneRequired + " I:" + iron + "|" + ironRequired);
+        if (wood >= woodRequired && stone >= stoneRequired && iron >= ironRequired)
+        {
+            Inventory.instance.RemoveResources(woodRequired, 0);
+            Inventory.instance.RemoveResources(stoneRequired, 1);
+            Inventory.instance.RemoveResources(ironRequired, 2);
+            return true;
+        }
+        else
+            return false;
     }
 }

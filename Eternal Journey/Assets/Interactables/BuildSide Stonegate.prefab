@@ -10,7 +10,7 @@ PrefabInstance:
     - target: {fileID: 6387505109327983258, guid: ee430d04ab0718047a82f2eb8e83efc0,
         type: 3}
       propertyPath: m_Name
-      value: BuildSide
+      value: BuildSide Stonegate
       objectReference: {fileID: 0}
     - target: {fileID: 6387505109327983256, guid: ee430d04ab0718047a82f2eb8e83efc0,
         type: 3}
@@ -78,6 +78,11 @@ PrefabInstance:
       propertyPath: interactionTransform
       value: 
       objectReference: {fileID: 6950945025482704192}
+    - target: {fileID: 6387505109327983259, guid: ee430d04ab0718047a82f2eb8e83efc0,
+        type: 3}
+      propertyPath: requirements
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ee430d04ab0718047a82f2eb8e83efc0, type: 3}
 --- !u!4 &6950945025482704192 stripped

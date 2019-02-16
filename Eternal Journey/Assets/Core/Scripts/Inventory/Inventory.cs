@@ -28,7 +28,7 @@ public class Inventory : MonoBehaviour {
     public bool Add(Item item) {
         if (!item.isDefaultItem) {
             if (items.Count >= space) {
-                Debug.Log("Inventory full!");
+                hudUI.instance.PostMessage("Inventory full!");
                 return false;
             }
             items.Add(item);

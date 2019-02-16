@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class RandomRotation : MonoBehaviour
 {
@@ -15,7 +13,7 @@ public class RandomRotation : MonoBehaviour
             if (xyzRandom[i])
             {
                 rotation[i] = Random.Range(0f, 360f);
-                Debug.Log(this.name + " has rotated along Axis#" + i + " by " + rotation[i] + "°");
+                //Debug.Log(this.name + " has rotated along Axis#" + i + " by " + rotation[i] + "°");
             }
         }
         gameObject.transform.rotation *= Quaternion.Euler(rotation[0], rotation[1], rotation[2]);

@@ -1,6 +1,4 @@
-﻿using UnityEngine;
-
-public class ItemPickup : Interactable {
+﻿public class ItemPickup : Interactable {
 
     public Item item;
     public bool isGold;
@@ -17,8 +15,8 @@ public class ItemPickup : Interactable {
 
     void PickUp() {
         int index = (int)currentResourceType;
-        string message = string.Format("Picking up {0} witch ResourceType {1}", item.name, index);
-        Debug.Log(message);
+        //string message = string.Format("Picking up {0} with ResourceType {1}", item.name, index);
+        //Debug.Log(message);
         if (currentType == Type.item)
         {
             bool wasPickedUp = Inventory.instance.Add(item);

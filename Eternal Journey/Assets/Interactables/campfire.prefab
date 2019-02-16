@@ -35,6 +35,21 @@ MonoBehaviour:
   spawnPoint: {fileID: 2624132519022822477}
   isLit: 0
   offset: {x: 0, y: 1, z: 0}
+--- !u!114 &2309720852711724486
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2624132519023319151}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87a6d75ff24eb0e4bb58e097a982bae6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  woodRequired: 5
+  stoneRequired: 0
+  ironRequired: 0
 --- !u!1 &5710987243566011064
 GameObject:
   m_ObjectHideFlags: 0
@@ -80,17 +95,29 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 5e833e687dd986947ba2adbe09fb2a0b, type: 3}
+      propertyPath: m_Name
+      value: Campfire
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 5e833e687dd986947ba2adbe09fb2a0b, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 5e833e687dd986947ba2adbe09fb2a0b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5e833e687dd986947ba2adbe09fb2a0b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -28.448122
+      value: 111.04052
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5e833e687dd986947ba2adbe09fb2a0b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -24.603
+      value: 0.02617018
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5e833e687dd986947ba2adbe09fb2a0b, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -3.7247133
+      value: 54.075798
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5e833e687dd986947ba2adbe09fb2a0b, type: 3}
       propertyPath: m_LocalRotation.x
@@ -136,32 +163,14 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 100002, guid: 5e833e687dd986947ba2adbe09fb2a0b, type: 3}
-      propertyPath: m_Name
-      value: Campfire
-      objectReference: {fileID: 0}
-    - target: {fileID: 100002, guid: 5e833e687dd986947ba2adbe09fb2a0b, type: 3}
-      propertyPath: m_NavMeshLayer
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 100002, guid: 5e833e687dd986947ba2adbe09fb2a0b, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 4294967295
-      objectReference: {fileID: 0}
-    - target: {fileID: 2300000, guid: 5e833e687dd986947ba2adbe09fb2a0b, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: b64edccdf8034064bba9d4fbf4e98fc3, type: 2}
-    - target: {fileID: 2300000, guid: 5e833e687dd986947ba2adbe09fb2a0b, type: 3}
-      propertyPath: m_Materials.Array.data[1]
-      value: 
-      objectReference: {fileID: 2100000, guid: ae0ebde7adb830740b130a7d89895005, type: 2}
-    - target: {fileID: 2300000, guid: 5e833e687dd986947ba2adbe09fb2a0b, type: 3}
-      propertyPath: m_Materials.Array.data[2]
-      value: 
-      objectReference: {fileID: 2100000, guid: 473438eae2d8e4e449462decb52d2790, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5e833e687dd986947ba2adbe09fb2a0b, type: 3}
+--- !u!1 &2624132519023319151 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100000, guid: 5e833e687dd986947ba2adbe09fb2a0b,
+    type: 3}
+  m_PrefabInstance: {fileID: 2624132519023222479}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &2624132519022822479 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 5e833e687dd986947ba2adbe09fb2a0b,

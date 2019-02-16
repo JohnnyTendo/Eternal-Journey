@@ -103,6 +103,7 @@ GameObject:
   - component: {fileID: 1182016924727484635}
   - component: {fileID: 7940731017046866200}
   - component: {fileID: 6828132786037572777}
+  - component: {fileID: 9211510010951090992}
   m_Layer: 0
   m_Name: tower
   m_TagString: Untagged
@@ -159,6 +160,21 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 14
   m_Mesh: {fileID: 0}
+--- !u!114 &9211510010951090992
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6582609395710168067}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87a6d75ff24eb0e4bb58e097a982bae6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  woodRequired: 10
+  stoneRequired: 30
+  ironRequired: 0
 --- !u!1 &7115089755996644251
 GameObject:
   m_ObjectHideFlags: 0
