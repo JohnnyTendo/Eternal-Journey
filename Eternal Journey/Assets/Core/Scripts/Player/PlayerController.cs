@@ -5,13 +5,11 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
 
-
     public Interactable focus;
     public LayerMask movementMask;
 
     Camera cam;
     PlayerMotor motor;
-
 
     void Start()
     {
@@ -19,7 +17,6 @@ public class PlayerController : MonoBehaviour
         motor = GetComponent<PlayerMotor>();
     }
 
-    
     void Update() {
         if (EventSystem.current.IsPointerOverGameObject())
             return;

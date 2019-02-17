@@ -84,7 +84,7 @@
     <Compile Include="Assets\Core\Scripts\Item\ItemPickup.cs" />
     <Compile Include="Assets\Core\Scripts\Menu\MainMenu.cs" />
     <Compile Include="Assets\Core\Scripts\Menu\SettingsMenu.cs" />
-    <Compile Include="Assets\Core\Scripts\MeshGenerator.cs" />
+    <Compile Include="Assets\Core\Scripts\PauseMenu.cs" />
     <Compile Include="Assets\Core\Scripts\Player\CameraController.cs" />
     <Compile Include="Assets\Core\Scripts\Player\CharacterAnimator.cs" />
     <Compile Include="Assets\Core\Scripts\Player\PlayerController.cs" />

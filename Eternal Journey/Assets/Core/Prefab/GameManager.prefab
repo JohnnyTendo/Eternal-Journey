@@ -1,0 +1,131 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7171933532832934279
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7171933532832934277}
+  - component: {fileID: 7171933532832934276}
+  - component: {fileID: 7171933532832934282}
+  - component: {fileID: 7171933532832934280}
+  - component: {fileID: 7171933532832934283}
+  - component: {fileID: 7171933532832934281}
+  - component: {fileID: 7171933532832934286}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7171933532832934277
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7171933532832934279}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7171933532832934276
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7171933532832934279}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd5b5787c95be7949ac5361bab80231e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  items: []
+  gold: 0
+  resources: 640000006400000064000000
+  space: 24
+--- !u!114 &7171933532832934282
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7171933532832934279}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2140cf861efa65a4c9ed4836b22dc542, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  defaultItems:
+  - {fileID: 11400000, guid: 76ec47a48691deb4da059f4b9d53a839, type: 2}
+  - {fileID: 11400000, guid: 0578da0c814858d4394acede71987ebb, type: 2}
+  - {fileID: 11400000, guid: 28a43f94ce676f3449964f78b117e35a, type: 2}
+  - {fileID: 11400000, guid: bbf273211ae62884383c83dd23d16082, type: 2}
+  targetMesh: {fileID: 0}
+--- !u!114 &7171933532832934280
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7171933532832934279}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2480624b05ff154f801b67952d87a6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  items: []
+  space: 24
+--- !u!114 &7171933532832934283
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7171933532832934279}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07e7dc85516f60648a4ce71764f1225c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  defaultItems:
+  - {fileID: 11400000, guid: 76ec47a48691deb4da059f4b9d53a839, type: 2}
+  - {fileID: 11400000, guid: 0578da0c814858d4394acede71987ebb, type: 2}
+  - {fileID: 11400000, guid: 28a43f94ce676f3449964f78b117e35a, type: 2}
+  - {fileID: 11400000, guid: bbf273211ae62884383c83dd23d16082, type: 2}
+  targetMesh: {fileID: 0}
+--- !u!114 &7171933532832934281
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7171933532832934279}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 032ec8b638ea5e0419514c132d51af57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 0}
+--- !u!114 &7171933532832934286
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7171933532832934279}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d076cb532fec5b64480c9c471ab6a613, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  noneMessage: {fileID: 10916, guid: 0000000000000000f000000000000000, type: 0}
+  pauseMessage: {fileID: 2800000, guid: 5d85dedd6ccfa82458dab93a658ef8cd, type: 3}

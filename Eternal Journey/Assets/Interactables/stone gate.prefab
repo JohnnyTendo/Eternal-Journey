@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 3715337820677041720}
   - component: {fileID: 4805537187182216002}
   - component: {fileID: 7393261694691724665}
+  - component: {fileID: 5093234580533111628}
   m_Layer: 0
   m_Name: stone gate
   m_TagString: Untagged
@@ -69,6 +70,22 @@ MonoBehaviour:
   woodRequired: 0
   stoneRequired: 20
   ironRequired: 0
+--- !u!208 &5093234580533111628
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 706135945907110618}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.875, y: 3, z: 1.5}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 3, z: 3.5}
+  m_TimeToStationary: 0.5
 --- !u!1 &2911993392850246953
 GameObject:
   m_ObjectHideFlags: 0
@@ -114,11 +131,12 @@ GameObject:
   - component: {fileID: 7804511110146733872}
   - component: {fileID: 349228449}
   - component: {fileID: 349228450}
+  - component: {fileID: 2744876574186448671}
   m_Layer: 0
   m_Name: frame
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &8785788622387715935
@@ -206,12 +224,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ebb892dd2a018d4db9653f577169e71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  radius: 3
+  radius: 5
   interactionTransform: {fileID: 8518131610091165602}
-  range: 10
-  isOpen: 0
-  gateLeft: {fileID: 6609761208942270025}
-  gateRight: {fileID: 4454378642255091529}
+  gate: {fileID: 2911993392850246953}
+--- !u!208 &2744876574186448671
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3165406873332352300}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 1.75, y: 0.3, z: 1}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0.7, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &4454378642255091529
 GameObject:
   m_ObjectHideFlags: 0
@@ -224,6 +255,7 @@ GameObject:
   - component: {fileID: 6434915810954880105}
   - component: {fileID: 1954300723142647907}
   - component: {fileID: 1960220379}
+  - component: {fileID: 6126278640281977848}
   m_Layer: 0
   m_Name: gateR
   m_TagString: Untagged
@@ -304,6 +336,22 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.50000024, y: 2.0000014, z: 5.1350026}
   m_Center: {x: 4.0968324e-14, y: 1.0000076, z: 2.5675006}
+--- !u!208 &6126278640281977848
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4454378642255091529}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.25, y: 1, z: 2.568}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 1, z: 2.568}
+  m_TimeToStationary: 0.5
 --- !u!1 &6484069976620502361
 GameObject:
   m_ObjectHideFlags: 0
@@ -318,7 +366,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &8518131610091165602
 Transform:
@@ -346,6 +394,7 @@ GameObject:
   - component: {fileID: 1125733216660077697}
   - component: {fileID: 3284212439938872524}
   - component: {fileID: 6327843}
+  - component: {fileID: 8323139597133027364}
   m_Layer: 0
   m_Name: gateL
   m_TagString: Untagged
@@ -426,3 +475,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.5, y: 2.0000007, z: 5.1350017}
   m_Center: {x: 0, y: 0.9999927, z: 2.5675006}
+--- !u!208 &8323139597133027364
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6609761208942270025}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.25, y: 1, z: 2.568}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 1, z: 2.568}
+  m_TimeToStationary: 0.5

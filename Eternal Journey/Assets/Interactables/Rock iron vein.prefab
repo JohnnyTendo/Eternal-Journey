@@ -15,11 +15,12 @@ GameObject:
   - component: {fileID: 5507188645663888827}
   - component: {fileID: 481071326594359686}
   - component: {fileID: 4230558541828660724}
+  - component: {fileID: 6812776860266547756}
   m_Layer: 0
   m_Name: Rock iron vein
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &6937786089763061384
@@ -148,3 +149,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   xyzRandom: 000001
+--- !u!208 &6812776860266547756
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7984684124389560405}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 2.075, y: 2.078, z: 1.355}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: -0.12100001, y: -0.026, z: 1.0580001}
+  m_TimeToStationary: 0.5

@@ -15,11 +15,12 @@ GameObject:
   - component: {fileID: 7558895100160451814}
   - component: {fileID: 4698797951961077340}
   - component: {fileID: 1524082882111931738}
+  - component: {fileID: 5267131448024082174}
   m_Layer: 0
   m_Name: rock big
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &3229980007570909465
@@ -147,3 +148,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   xyzRandom: 000001
+--- !u!208 &5267131448024082174
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6634403403409475225}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 3.0170002, y: 2.772, z: 3.433}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: -1.1550001, y: 0.76600003, z: 3.0920002}
+  m_TimeToStationary: 0.5
