@@ -1,7 +1,6 @@
 ﻿public class ItemPickup : Interactable {
 
     public Item item;
-    public bool isGold;
     public int value;
     public Type currentType;
     public ResourceType currentResourceType;
