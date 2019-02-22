@@ -49,7 +49,6 @@ public class PauseMenu : MonoBehaviour
     void OnGUI()
     {
         GUI.DrawTexture(textMessage, activeMessage);
-        float ctrlWidth = Screen.width / 2;
         float ctrlHeight = Screen.height / 8;
         if (isPause)
         {

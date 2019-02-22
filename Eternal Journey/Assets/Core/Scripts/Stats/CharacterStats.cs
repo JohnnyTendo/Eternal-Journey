@@ -27,7 +27,7 @@ public class CharacterStats : MonoBehaviour
         damage -= armor.GetValue();
         damage = Mathf.Clamp(damage, 0, int.MaxValue);
         currentHealth -= damage;
-        Debug.Log(damage + " damage has been dealt to " + transform.name);
+        hudUI.instance.PostMessage(damage + " damage has been dealt to " + transform.name);
         if (currentHealth <= 0)
         {
             Die();
