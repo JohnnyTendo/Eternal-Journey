@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3815119123988183611}
   - component: {fileID: 7391586587729907496}
+  - component: {fileID: 2582250769063801134}
   m_Layer: 0
   m_Name: Prefab Object
   m_TagString: Untagged
@@ -46,7 +47,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radius: 1
   interactionTransform: {fileID: 3815119123988183611}
-  item: {fileID: 0}
+  item: {fileID: 11400000, guid: e96507f25a6c69c43b1b56733318c447, type: 2}
+  value: 0
+  currentType: 1
+  currentResourceType: 2
+--- !u!65 &2582250769063801134
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2351556227568445212}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &8265223390274296428
 GameObject:
   m_ObjectHideFlags: 0

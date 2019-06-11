@@ -96,6 +96,7 @@
     <Compile Include="Assets\Core\Scripts\Player2\PlayerController2.cs" />
     <Compile Include="Assets\Core\Scripts\Player2\PlayerMotor2.cs" />
     <Compile Include="Assets\Core\Scripts\PlayerManager.cs" />
+    <Compile Include="Assets\Core\Scripts\Questing System\Goal.cs" />
     <Compile Include="Assets\Core\Scripts\RandomRotation.cs" />
     <Compile Include="Assets\Core\Scripts\RequirementsScript.cs" />
     <Compile Include="Assets\Core\Scripts\SnapToGrid.cs" />

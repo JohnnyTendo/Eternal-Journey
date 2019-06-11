@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 843a4f73fc2eb324b901f054879c45a1, type: 3}
+  m_Name: PlaneShield
+  m_EditorClassIdentifier: 
+  name: PlaneShield
+  icon: {fileID: 21300000, guid: f9f2e8fde1371a9478bf3220b01a1329, type: 3}
+  isDefaultItem: 0
+  equipSlot: 4
+  mesh: {fileID: 4366989661263386768, guid: 1e413ce7ecf86c547a436bfe9c41f772, type: 3}
+  coveredMeshRegions: 
+  armorModifier: 3
+  damageModifier: 1
